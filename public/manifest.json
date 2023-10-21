@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Hello World Extension",
+    "version": "1.0.0",
+    "description": "A simple Chrome extension with React",
+    "action": {
+      "default_popup": "popup.html",
+      "default_popup_width": 315,
+      "default_popup_height": 205
+    },
+    "background": {
+      "service_worker": "background.bundle.js"
+    },
+    "permissions": [],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
+  
